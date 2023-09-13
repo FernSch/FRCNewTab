@@ -17,7 +17,7 @@ if (localStorage.teams[0] === '[' || localStorage.teams[localStorage.teams.lengt
 }
 // If the custom team list is valid, put it into the textbox.
 // If the list doesn't exist or isn't valid, the textbox will be left empty.
-if (localStorage.teams !== undefined && localStorage.teams !== 'undefined' && localStorage.teams !== '') {
+if (localStorage.teams !== undefined && localStorage.teams !== 'undefined' && localStorage.teams !== '' && localStorage.teams[-1] != "") {
     o.teams.value = localStorage.teams;
 }
 o.name.checked = JSON.parse(localStorage.name);
